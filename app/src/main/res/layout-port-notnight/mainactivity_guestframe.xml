@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"
+        android:src="@drawable/homemainbg"
+
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/titleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFEB3B"
+            android:gravity="center|center_vertical"
+            android:text="GENERATE NEW RANDOM EPISODE"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/episodeName"
+            app:layout_constraintStart_toStartOf="@+id/episodeName"
+            tools:layout_editor_absoluteY="32dp" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imageFilterView"
+            android:layout_width="246dp"
+            android:layout_height="174dp"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="102dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/episodeName"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/system_accent2_200"
+            android:text=" EPISODE NAME"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/seasonNumberInfo"
+            app:layout_constraintStart_toStartOf="@+id/seasonNumberInfo"
+            tools:layout_editor_absoluteY="326dp" />
+
+        <TextView
+            android:id="@+id/seasonNumberInfo"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/system_accent2_200"
+            android:text=" SEASON EPISODE #"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/plotTxt"
+            app:layout_constraintStart_toStartOf="@+id/plotTxt"
+            tools:layout_editor_absoluteY="380dp" />
+
+        <TextView
+            android:id="@+id/plotTxt"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="PLOT LOREM IPSUM BLABKABKA LOREM IPSUM BLABKABK LOREM IPSUM BLABKABK LOREM IPSUM BLABKABK"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="436dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:id="@+id/generateBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="GENERATE"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            app:cornerRadius="50dp"
+            app:backgroundTint="#E9361E"
+            tools:layout_editor_absoluteX="155dp"
+            tools:layout_editor_absoluteY="543dp" />
+
+
+    </androidx.constraintlayout.helper.widget.Layer>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
