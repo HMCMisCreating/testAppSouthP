@@ -23,73 +23,97 @@
             android:id="@+id/titleBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
             android:backgroundTint="#FFEB3B"
             android:gravity="center|center_vertical"
             android:text="GENERATE NEW RANDOM EPISODE"
             android:textColor="@color/black"
             android:textSize="20sp"
+            app:cornerRadius="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageFilterView"
             app:layout_constraintEnd_toEndOf="@+id/episodeName"
             app:layout_constraintStart_toStartOf="@+id/episodeName"
-            tools:layout_editor_absoluteY="32dp" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.utils.widget.ImageFilterView
             android:id="@+id/imageFilterView"
             android:layout_width="246dp"
             android:layout_height="174dp"
-            tools:layout_editor_absoluteX="82dp"
-            tools:layout_editor_absoluteY="102dp"
+            android:layout_marginStart="82dp"
+            android:layout_marginEnd="83dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/episodeName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleBtn"
             tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
         <TextView
             android:id="@+id/episodeName"
             android:layout_width="277dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/system_accent2_200"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="32dp"
+            android:background="#BEC4DA"
             android:text=" EPISODE NAME"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
+            app:cornerRadius="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/seasonNumberInfo"
             app:layout_constraintEnd_toEndOf="@+id/seasonNumberInfo"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/seasonNumberInfo"
-            tools:layout_editor_absoluteY="326dp" />
+            app:layout_constraintTop_toBottomOf="@+id/imageFilterView" />
 
         <TextView
             android:id="@+id/seasonNumberInfo"
             android:layout_width="277dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/system_accent2_200"
+            android:layout_marginTop="25dp"
+            android:background="#BEC4DA"
             android:text=" SEASON EPISODE #"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="italic"
+            app:cornerRadius="0dp"
             app:layout_constraintEnd_toEndOf="@+id/plotTxt"
             app:layout_constraintStart_toStartOf="@+id/plotTxt"
-            tools:layout_editor_absoluteY="380dp" />
+            app:layout_constraintTop_toBottomOf="@+id/episodeName" />
 
         <TextView
             android:id="@+id/plotTxt"
             android:layout_width="247dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="38dp"
             android:background="@color/white"
             android:text="PLOT LOREM IPSUM BLABKABKA LOREM IPSUM BLABKABK LOREM IPSUM BLABKABK LOREM IPSUM BLABKABK"
             android:textAlignment="center"
-            tools:layout_editor_absoluteX="81dp"
-            tools:layout_editor_absoluteY="436dp" />
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/generateBtn"
+            app:layout_constraintTop_toBottomOf="@+id/seasonNumberInfo"
+            tools:layout_editor_absoluteX="81dp" />
 
 
         <com.google.android.material.button.MaterialButton
-            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
             android:id="@+id/generateBtn"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="43dp"
             android:text="GENERATE"
-            android:textStyle="bold"
             android:textSize="10sp"
-            app:cornerRadius="50dp"
+            android:textStyle="bold"
             app:backgroundTint="#E9361E"
-            tools:layout_editor_absoluteX="155dp"
-            tools:layout_editor_absoluteY="543dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-
+            app:cornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/plotTxt"
+            tools:layout_editor_absoluteX="155dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
