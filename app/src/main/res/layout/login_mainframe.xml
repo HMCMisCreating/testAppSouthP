@@ -16,48 +16,64 @@
         />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="277dp"
             android:layout_height="48dp"
-            android:background="@android:color/system_accent2_200"
+            android:layout_marginTop="128dp"
+            android:layout_marginBottom="15dp"
+            android:background="#BEC4DA"
             android:ems="10"
             android:hint=" EMAIL"
             android:inputType="textEmailAddress"
             android:textColor="@color/black"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="67dp"
-            tools:layout_editor_absoluteY="198dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText"
+            tools:layout_editor_absoluteX="67dp" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/policyAgreeTxt"
             android:layout_width="277dp"
             android:layout_height="wrap_content"
-            android:text="BY CREATING AN ACCOUNT I AGREE TO THE T&C AND AGREE TO THE PRIVACY POLICY"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="53dp"
+            android:text="BY CREATING AN ACCOUNT I AGREE TO THE T&amp;C AND AGREE TO THE PRIVACY POLICY"
             android:textColor="@color/black"
             android:textSize="12sp"
-            tools:layout_editor_absoluteX="67dp"
-            tools:layout_editor_absoluteY="475dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/signUpBtn"
+            tools:layout_editor_absoluteX="67dp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/fbSignInBtn"
             android:layout_width="277dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="19dp"
             android:backgroundTint="#4872EF"
             android:text="SIGN in with FB"
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="12sp"
-            
-            tools:layout_editor_absoluteX="67dp"
-            tools:layout_editor_absoluteY="612dp" />
+            app:layout_constraintBottom_toTopOf="@+id/googleSignInBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.5" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/googleSignInBtn"
             android:layout_width="277dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#31ED39"
@@ -65,64 +81,79 @@
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fbSignInBtn"
             tools:layout_editor_absoluteX="67dp"
-            tools:layout_editor_absoluteY="679dp" />
+            tools:layout_editor_absoluteY="634dp" />
 
         <Button
-            android:id="@+id/editTextText5"
+            android:id="@+id/frgtPwTxt"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="170dp"
             android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
             android:ems="10"
             android:inputType="text"
             android:text="FORGOT PASSWORD"
             android:textAlignment="textEnd"
             android:textColor="#03A9F4"
             android:textSize="14sp"
-            tools:layout_editor_absoluteX="171dp"
-            tools:layout_editor_absoluteY="309dp" />
+            app:layout_constraintBottom_toTopOf="@+id/editTextText3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.721"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
         <Button
-            android:id="@+id/editTextText4"
+            android:id="@+id/signUpBtn"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="277dp"
             android:layout_height="48dp"
+            android:layout_marginBottom="7dp"
             android:ems="10"
-            android:inputType="text"
             android:text="SIGN UP"
-            android:textColor="#03A9F4"
             android:textAlignment="center"
+            android:textColor="#03A9F4"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="67dp"
-            tools:layout_editor_absoluteY="415dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/policyAgreeTxt"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+            tools:layout_editor_absoluteX="67dp" />
 
         <Button
             android:id="@+id/editTextText3"
             android:layout_width="277dp"
             android:layout_height="48dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="#FD03CB"
             android:ems="10"
-            android:inputType="text"
             android:text="SIGN IN"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="67dp"
-            tools:layout_editor_absoluteY="367dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/signUpBtn"
+            app:layout_constraintTop_toBottomOf="@+id/frgtPwTxt"
+            tools:layout_editor_absoluteX="67dp" />
 
         <Button
             android:id="@+id/editTextText"
             android:layout_width="277dp"
             android:layout_height="48dp"
+            android:layout_marginTop="22dp"
             android:backgroundTint="#FFEB3B"
             android:ems="10"
-            android:inputType="text"
             android:text="CONTINUE AS GUEST"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20sp"
-            tools:layout_editor_absoluteX="64dp"
-            tools:layout_editor_absoluteY="22dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="64dp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -141,27 +172,18 @@
             android:id="@+id/editTextTextPassword"
             android:layout_width="277dp"
             android:layout_height="48dp"
-            android:background="@android:color/system_accent2_200"
+            android:layout_marginTop="15dp"
+            android:background="#BEC4DA"
             android:ems="10"
             android:hint=" PASSWORD"
             android:inputType="textPassword"
             android:textColor="@color/black"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="67dp"
-            tools:layout_editor_absoluteY="261dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+            tools:layout_editor_absoluteX="67dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-    <fragment
-        android:id="@+id/nav_host_fragment_content_main"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/mobile_navigation" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
 
