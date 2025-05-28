@@ -78,19 +78,19 @@
         android:id="@+id/epForLater"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:drawableEnd="@drawable/chevron_right_24dp"
         android:text="EPISODES FOR LATER"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintTop_toBottomOf="@+id/epWatched"
-        tools:layout_editor_absoluteX="57dp" />
+        tools:layout_editor_absoluteX="52dp" />
 
     <TextView
         android:id="@+id/epInProgress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:drawableEnd="@drawable/chevron_right_24dp"
         android:text="EPISODES IN PROGRESS"
         android:textColor="@color/black"
@@ -102,7 +102,7 @@
         android:id="@+id/clearHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:text="CLEAR HISTORY"
         android:textColor="@color/black"
         android:textSize="24sp"
@@ -113,12 +113,12 @@
         android:id="@+id/logOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:text="LOG OUT"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintTop_toBottomOf="@+id/clearHistory"
-        tools:layout_editor_absoluteX="50dp" />
+        tools:layout_editor_absoluteX="52dp" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profilePhoto"
@@ -155,7 +155,23 @@
         tools:layout_editor_absoluteX="220dp"
         tools:layout_editor_absoluteY="178dp" />
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/home"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="608dp" />
 
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/user"
+        tools:layout_editor_absoluteX="339dp"
+        tools:layout_editor_absoluteY="612dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
