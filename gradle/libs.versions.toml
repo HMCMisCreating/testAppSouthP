@@ -1,5 +1,5 @@
 [versions]
-agp = "8.10.0"
+agp = "8.10.1"
 coreSplashscreen = "1.0.1"
 kotlin = "2.0.21"
 coreKtx = "1.16.0"
@@ -23,6 +23,10 @@ foundationLayout = "1.9.0-alpha03"
 lottieCompose = "$6.6.6"
 lottieComposeVersion = "6.6.6"
 implementation_comLottieCompose = "4.0.0"
+material3 = "1.4.0-alpha15"
+uiTooling = "1.9.0-alpha03"
+viewbinding = "8.12.0-alpha03"
+navigationCompose = "2.9.0"
 
 [libraries]
 airbnb-lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottie" }
@@ -48,8 +52,12 @@ androidx-foundation-layout = { group = "androidx.compose.foundation", name = "fo
 lottie-compose = { group = "implementation ", name = "lottie-compose", version.ref = "lottieCompose" }
 android-lottie-compose = { group = "implementation (", name = "lottie-compose", version.ref = "lottieComposeVersion" }
 implementation_com-lottie-compose = { group = "implementation com.airbnb.android", name = "lottie-compose", version.ref = "implementation_comLottieCompose" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "uiTooling" }
+androidx-viewbinding = { group = "androidx.databinding", name = "viewbinding", version.ref = "viewbinding" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
